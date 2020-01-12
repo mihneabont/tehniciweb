@@ -8,7 +8,7 @@ exports.products_get_all = (req, res, next) => {
     .then(docs => {
       const response = {
         count: docs.length,
-        products: docs.map(doc => {
+        poze: docs.map(doc => {
           return {
             name: doc.name,
             productImage: doc.productImage,
